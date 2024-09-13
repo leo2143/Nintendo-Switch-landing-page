@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+video {
+  width: 100%;
+}
+
+body {
+  max-width: 1440px;
+
+  background-color: var(--background);
+}
+:root {
+  --font-color: #fff;
+  --primary-color: #3498db;
+  --background: #e60012;
+  --font-size: 16px;
+  --card-background: #ac010e;
+  --card-border-color: #920101;
+  --card-shadow: 11px -7px 4px 0px rgba(0, 0, 0, 0.25);
+}
+h1 {
+  color: var(--font-color);
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.03rem;
+}
+h3 {
+  font-size: 1.17rem;
+}
+h4{
+    font-size: 1.125rem;
+
+}
+header {
+  background-image: url(../imgs/Mesa\ de\ trabajo\ 1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-introduction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.introduction-title-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.introduction-title-container p {
+  color: var(--font-color);
+  text-align: center;
+  text-shadow: 0px -3px 4px rgb(0 0 0);
+    font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: -0.0675rem;
+}
+.introduction-text-container {
+  width: 90%;
+  color: var(--font-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem; /* 156.25% */
+  text-shadow: 3px 0px 20px rgb(0 0 0);
+}
+.introduction-video-container {
+  width: 100%;
+}
+.introduction-video-container iframe {
+  width: 100%;
+  height: auto;
+}
+.section-principal-features {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0 6rem 0;
+  gap: 5rem;
+}
+.principal-features-title-container,
+.principal-features-text-container,
+.principal-features-feats-container {
+  width: 90%;
+  line-height: 1.25rem;
+  font-family: Roboto;
+}
+.principal-features-text-container {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center
+  ;
+  gap: 1.4rem;
+  color: var(--font-color);
+  line-height: 1.5rem; /* 125% */
+}
+.principal-features-title-container h2 {
+  color: var(--font-color);
+  text-align: center;
+  font-family: Roboto;
+  /* font-size: 1.25rem; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 125% */
+  letter-spacing: -0.025rem;
+}
+.principal-features-feats-container {
+  display: flex;
+
+
+  flex-wrap: wrap
+  ;
+  align-items: center;
+  justify-content: center;
+  max-width: 620px;
+  gap: 4.5rem;
+}
+
+.feats-card {
+  max-width: 310px;
+  font-family: Roboto;
+  height: 32.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: var(--card-background);
+  border: solid var(--card-border-color);
+  box-shadow: var(--card-shadow);
+  border-radius: 0.9375rem;
+  gap: 1.25rem;
+}
+.card-title,
+.card-img,
+.card-text {
+  text-align: center;
+  width: 90%;
+  
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.section-joyCon{
+    font-family: Roboto;
+    line-height: 1.5rem;
+    color: var(--font-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+}
+.joycon-introduction{
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top:11rem
+
+}
+.joycon-introduction-img{
+    position: absolute;
+    width: 90%;
+    z-index: 1;
+    left: 0;
+}
+
+.joycon-introduction-title{
+    position: relative;
+    width: 30%;
+    left: 18vw;
+    bottom: 2vw;
+    z-index: 2;
+}
+.joycon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9rem;
+}
+.joycon-description{
+    position: relative;
+    width: 55%;
+    top: 23.5vh;
+    gap: 1.6rem;
+    padding: 0rem 0 7.6rem 0;
+}
+.joycon-subtitle{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-bottom: 1.5rem;
+
+}
+.joycon-try-new{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2.2rem 0 1.2rem 0;
+
+}
+.try-new-img-container{
+    padding-top: 1.2rem;
+}
+
+.section-games-galery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-color);
+    line-height: 1.5rem; /* 125% */
+    padding-top: 4rem;
+    text-align: center;
+}
+.games-galery-titles-container{
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    gap: 1.8rem;
+    width: 90%;
+}
+.games-imgs-container{
+
+    max-width: 19rem;
+    background-image: url(../imgs/Vector\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Centra la imagen */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    width: 90%;
+}
+.games-imgs-container div{
+    max-width: 300px;
+}
+
+@media screen and (min-width: 680px) {
+    
+    .principal-features-feats-container{
+        max-width: 900px;
+    }
+
+    .games-imgs-container{
+        max-width: 32rem;
+    }
+}
