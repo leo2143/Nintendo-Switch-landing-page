@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 img {
   width: 100%;
@@ -10,9 +11,18 @@ video {
 }
 
 body {
-  max-width: 1440px;
-
   background-color: var(--background);
+}
+main, header, footer{
+  max-width: 1920px;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Roboto;
+  text-align: center
+  ;
+  font-size: 1.4rem;
 }
 :root {
   --font-color: #fff;
@@ -21,25 +31,26 @@ body {
   --font-size: 16px;
   --card-background: #ac010e;
   --card-border-color: #920101;
+  --footer-background:#811212;
   --card-shadow: 11px -7px 4px 0px rgba(0, 0, 0, 0.25);
 }
 h1 {
+  width: 90%;
   color: var(--font-color);
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Roboto;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.03rem;
 }
 h3 {
-  font-size: 1.17rem;
+  font-size: 1.3rem;
 }
 h4{
-    font-size: 1.125rem;
-
+    font-size: 1.1rem;
 }
 header {
   background-image: url(../imgs/Mesa\ de\ trabajo\ 1.png);
@@ -50,6 +61,7 @@ header {
 .section-introduction {
   width: 100%;
   display: flex;
+  padding: 8rem 0 0 0;
   flex-direction: column;
   gap: 4.5rem;
   align-items: center;
@@ -57,23 +69,29 @@ header {
 }
 
 .introduction-title-container {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   align-items: center;
 }
+
 .introduction-title-container p {
+
+  width: 90%;
   color: var(--font-color);
   text-align: center;
-  text-shadow: 0px -3px 4px rgb(0 0 0);
-    font-family: Roboto;
+  text-shadow: -6px 3px 4px rgb(0 0 0);
+  font-family: Roboto;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.25rem;
   letter-spacing: -0.0675rem;
+}
+.introduction-image-container{
+  display: none;
 }
 .introduction-text-container {
   width: 90%;
@@ -87,12 +105,17 @@ header {
   text-shadow: 3px 0px 20px rgb(0 0 0);
 }
 .introduction-video-container {
-  width: 100%;
+  width: 80%;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9; /* Relación de aspecto para mantener el video en proporción */
 }
+
 .introduction-video-container iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain; /* Asegura que el contenido del video se ajuste */
 }
+
 .section-principal-features {
   width: 100%;
   display: flex;
@@ -107,19 +130,20 @@ header {
 .principal-features-feats-container {
   width: 90%;
   line-height: 1.25rem;
+  max-width: 1000px;
   font-family: Roboto;
 }
 .principal-features-text-container {
   display: flex;
   flex-direction: column;
 
-  text-align: center
-  ;
+  text-align: center;
   gap: 1.4rem;
   color: var(--font-color);
   line-height: 1.5rem; /* 125% */
 }
 .principal-features-title-container h2 {
+  font-size: 1.6rem;
   color: var(--font-color);
   text-align: center;
   font-family: Roboto;
@@ -131,18 +155,15 @@ header {
 }
 .principal-features-feats-container {
   display: flex;
-
-
-  flex-wrap: wrap
-  ;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 620px;
-  gap: 4.5rem;
+  max-width: 1000px;
+  gap: 2.5rem;
 }
 
 .feats-card {
-  max-width: 310px;
+  max-width: 270px;
   font-family: Roboto;
   height: 32.875rem;
   display: flex;
@@ -161,7 +182,6 @@ header {
 .card-text {
   text-align: center;
   width: 90%;
-  
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -178,6 +198,7 @@ header {
     align-items: center;
     background-color: black;
     text-align: center;
+    padding-bottom: 4rem;
 }
 .joycon-introduction{
     display: flex;
@@ -188,15 +209,48 @@ header {
     padding-top:11rem
 
 }
+.joycon-text-one-container{
+  margin-top: 2rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.joycon-imgs{
+  width: 90%;
+}
+
+.joycon-text-two-container{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joycon-text-two{
+  width: 100%;
+  padding-bottom: 0.33rem;
+ }
+
+.joycon-imgs-two{
+  width: 90%;
+}
+
 .joycon-introduction-img{
     position: absolute;
+    max-width: 600px;
     width: 90%;
     z-index: 1;
-    left: 0;
 }
 
 .joycon-introduction-title{
     position: relative;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.2;
     width: 30%;
     left: 18vw;
     bottom: 2vw;
@@ -209,18 +263,28 @@ header {
     margin-top: 9rem;
 }
 .joycon-description{
+    font-size:1.2rem;
+    line-height: 1.5;
     position: relative;
     width: 55%;
-    top: 23.5vh;
+    top: calc(50vh - 30vh);
     gap: 1.6rem;
     padding: 0rem 0 7.6rem 0;
+}
+.joycon-text{
+  width: 75%;
+  padding-bottom: 1.5rem;
+}
+.joycon-text-two{
+  width: 75%;
+  padding-bottom: 1.5rem;
+
 }
 .joycon-subtitle{
     display: flex;
     width: 75%;
     flex-direction: column;
     gap: 1.6rem;
-    padding-bottom: 1.5rem;
 
 }
 .joycon-try-new{
@@ -232,9 +296,15 @@ header {
 
 }
 .try-new-img-container{
+    width: 80%;
+    max-width: 900px;
     padding-top: 1.2rem;
 }
-
+.try-new-text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .section-games-galery{
     display: flex;
     flex-direction: column;
@@ -248,36 +318,347 @@ header {
 .games-galery-titles-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: Roboto;
     gap: 1.8rem;
     width: 90%;
 }
 .games-imgs-container{
-
-    max-width: 19rem;
+    max-width: 21rem;
     background-image: url(../imgs/Vector\ 1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; /* Centra la imagen */
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 3rem;
     width: 90%;
+    background-position-y: 1rem;
+
 }
 .games-imgs-container div{
     max-width: 300px;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  background-color: var(--footer-background);
+  color: var(--font-color);
+  font-family: Roboto;
+
+}
+.footer-links{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  max-width: 500px;
+  position: relative;
+  padding: 2rem 0 2rem 0;
+  justify-content: space-around;
+}
+
+.footer-links::after, .footer-email::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: white;
+  bottom: 0.4rem;
+  left: 0;
+}
+.footer-img-my{
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  max-width: 250px;
+  margin-top: 1rem;
+  width: 50%;
+}
+.footer-email{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.try-new-img-tablet{
+  display: none;
+}
+
+nav{
+  display: flex; 
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  padding: 1.7rem 0 1.7rem 0;
+  z-index: 99;
+}
+
+.nav-icon-container{
+  display: none;
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  margin: 0px 0px 0px 1.3rem;
+  cursor: pointer;
+}
+.hamburger-menu span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger-menu.open{
+  display: none;
+}
+.nav-links-container {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transition: left 0.3s ease;
+  z-index: 98;
+}
+
+.nav-links-container.open {
+  left: 0;
+}
+
+
+
+/* Animación del ícono de hamburguesa cuando está activo */
+.hamburger-menu.open span:nth-child(1) {
+transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+opacity: 0;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+transform: rotate(-45deg) translateY(-8px);
+}
+
+
 @media screen and (min-width: 680px) {
-    
-    .principal-features-feats-container{
-        max-width: 900px;
+    h1{
+      max-width: 22rem;
+      font-size: 2.1rem;
+        }
+    h2{
+      font-size: 1.9rem;
+
+    }
+    h3{
+      font-size: 1.4rem;
+
+    }
+    p{
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    header{
+      background-image: none;
+    }
+    nav{
+      align-items: center;
+      justify-content: space-around;
+    }
+    .nav-links-container {
+      width: 100%;
+      height: 0;
+      background-color: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      z-index: 98;
+    }
+.nav-movile-img{
+  display: none;
+}
+    .nav-icon-container{
+      display: block;
+    }
+    .hamburger-menu{
+      display: none;
     }
 
-    .games-imgs-container{
-        max-width: 32rem;
+    .introduction-title-container p{
+      width: 70%;
     }
+    .introduction-title-container{
+      max-width: 600px;
+    }
+    .introduction-text-container{
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      max-width: 53rem;
+      color: black;
+      box-shadow: 1px -13px 16px 0px rgba(199, 3, 3, 0.25) inset, 1px 14px 4px 0px rgba(0, 0, 0, 0.30);
+      border: 1px solid rgba(163, 3, 16, 0.85);
+      text-shadow: none;
+      padding: 1rem;
+      border-radius: 30px;
+    }
+    
+    .introduction-text-container p {
+      width: 90%;
+      align-items: center;
+    }
+    .introduction-image-container{
+      display: block;
+      max-width: 600px;
+
+    }
+    .joycon-subtitle{
+      text-align: left;
+      padding-left: 3rem;
+
+
+    }
+    .introducction-container{
+      display: flex;
+    }
+    .joycon-text{
+      text-align: left;
+      padding-left: 3rem;
+
+    }
+    .joycon-text-one-container{
+      margin-top: 2rem;
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
+    .joycon-imgs{
+      width: 40%;
+      padding-left: 3rem;
+
+    }
+    .games-imgs-container{
+        background-image: url(../Vector\ 5.svg);
+        background-position-y: 1rem;
+        max-width: 43rem;
+    }
+
+    .joycon-text-two-container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .joycon-text-two{
+      width: 48%;
+      text-align: left;
+      padding-right: 2rem;
+     }
+
+    .joycon-imgs-two{
+      width: 40%;
+      padding-right: 5rem;
+    }
+    .try-new-img-movile{
+      display: none;
+    }
+    .try-new-img-tablet{
+      display: block;
+    }
+    .section-introduction{
+      padding: 8rem 0 0 0;
+    }
+
+
+    .nav-icon-container{
+      height: 100%;
+    }
+    .nav-links-container{
+      width: 50%;
+      position: static;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+
+}
+@media screen and (min-width: 1000px) {
+  h1{
+    font-size: 3.3rem;
+    max-width: 470px;
+    width: 80%;
+  }
+  h2{
+    font-size: 2.125rem;
+
+  }
+  h3{
+    font-size: 1.75rem;
+  }
+  p{
+    font-size: 1.3rem;
+    max-width: 1000px;
+    line-height: 2.5rem;
+  }
+  .introduction-title-container{
+    width: 55%;
+
+  }
+  .introduction-title-container p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 520px;
+  }
+  .card-text p {
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+  .principal-features-text-container{
+    gap: 2.4rem;
+  }
+
+  .games-imgs-container{
+    max-width: 48rem;
+}
+.games-imgs-container{
+  background-image: url(../Vector\ 4.png);
+  background-position-y: top;
+  max-width: 56rem;
+  gap: 1rem;
+}
+.joycon-introduction-title h2{
+  font-size: 3.2rem;
+  max-width: 320px;
+}
+.joycon-description{
+  max-width: 700px;
+}
+.joycon-description p {
+  font-size: 1.6rem;
+}
+
+
 }
