@@ -185,17 +185,24 @@ nav {
 .principal-features-text-container {
   display: flex;
   flex-direction: column;
-
   text-align: center;
   gap: 1.4rem;
   color: var(--font-color);
   line-height: 1.5rem;
 }
+.principal-features-feats-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  max-width: 500px;
+  gap: 2.5rem;
+}
 .principal-features-title-container h2 {
   font-size: 1.6rem;
   color: var(--font-color);
   text-align: center;
-
   font-style: normal;
   font-weight: 700;
   line-height: 1.5rem;
@@ -204,14 +211,7 @@ nav {
 .principal-features-star-decoration {
   display: none;
 }
-.principal-features-feats-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 500px;
-  gap: 2.5rem;
-}
+
 
 .feats-card {
   max-width: 270px;
@@ -346,6 +346,8 @@ nav {
   width: 80%;
   max-width: 900px;
   padding-top: 1.2rem;
+  filter: drop-shadow(0px 48px 485px rgba(255, 255, 255, 1));
+
 }
 .try-new-text-container {
   display: flex;
@@ -358,7 +360,7 @@ nav {
   align-items: center;
   justify-content: center;
   color: var(--font-color);
-  line-height: 1.5rem; /* 125% */
+  line-height: 1.5rem;
   padding-top: 4rem;
   text-align: center;
 }
@@ -375,7 +377,7 @@ nav {
   background-image: url(../imgs/decoracion-movil.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; /* Centra la imagen */
+  background-position: center; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -611,6 +613,9 @@ footer {
     display: block;
     max-width: 600px;
   }
+  .principal-features-feats-container {
+    max-width: 600px;
+  }
   .joycon-subtitle {
     text-align: left;
     padding-left: 3rem;
@@ -618,6 +623,7 @@ footer {
   .introducction-container {
     display: flex;
   }
+
   .joycon-text {
     text-align: left;
     padding-left: 3rem;
@@ -782,6 +788,7 @@ footer {
     position: relative;
   }
   .principal-features-feats-container {
+    max-width: 1000px;
     position: relative;
     z-index: 3;
   }
