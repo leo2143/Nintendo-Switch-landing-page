@@ -52,6 +52,8 @@
           />
         </a>
         <a href="#principal-features">Caracteristicas principales</a>
+        <a href="#modes">Modos de juego</a>
+
         <a href="#joyCon">Joycons</a>
         <a href="#games">Juegos</a>
       </div>
@@ -106,7 +108,7 @@
     <main>
       <section class="section-principal-features" id="principal-features">
         <div class="principal-features-title-container">
-          <h2>Caracteristicas principales</h2>
+          <h2>Lo Mejor de la Nintendo Switch OLED</h2>
           <div class="principal-features-star-decoration">
             <img
               src="imgs/estrella-super-mario.svg"
@@ -237,13 +239,62 @@
           </div>
         </div>
       </section>
+      <section class="section-modes" id="modes">
+        <div class="modes-introduction">
+          <h2>Diversión a tu Manera Tres Modos de Juego</h2>
+          <p>
+            ¡Las consolas Nintendo Switch y Nintendo Switch – Modelo OLED han
+            sido diseñadas para <strong>cualquier estilo de vida</strong>,
+            transformándose rápidamente de una consola casera a una consola
+            portátil!
+          </p>
+        </div>
+        <div class="modes">
+          <div>
+          <h3>Modo TV</h3>
+          <p>
+            Coloca la consola Nintendo Switch en la <strong>base</strong> y
+            disfruta de juegos en alta definición en tu televisor.
+          </p>
+        </div>
+          <img src="imgs/modo-1.png" alt="modo tv de la nintendo switch" />
+        </div>
+        <div class="modes">
+          <div>
+            <h3>Modo semiportátil</h3>
+            <p>
+              Utiliza el <strong>soporte</strong> de la consola para compartir
+              la pantalla y la diversión en un juego multijugador***.
+            </p>
+          </div>
+          <img
+            src="imgs/modo-2.png"
+            alt="modo semi portatil de la nintendo switch"
+          />
+        </div>
+        <div class="modes">
+          <div>
+            <h3>Modo portátil</h3>
+            <p>
+              Retira la consola para jugar con los
+              <strong>controles Joy‑Con™ acoplados</strong> y disfrutar de la
+              pantalla OLED de 7 pulgadas (17.78 cm).
+            </p>
+          </div>
+
+          <img
+            src="/imgs/modo-3.png"
+            alt="modo portatil de la nintendo switch"
+          />
+        </div>
+      </section>
       <section class="section-joyCon" id="joyCon">
         <div class="joycon-introduction">
           <div class="joycon-introduction-img">
             <img src="imgs/joycons.png" alt="joycons" />
           </div>
           <div class="joycon-introduction-title">
-            <h2>Los controles Joy‑Con™</h2>
+            <h2> Versatilidad con los Controles Joy‑Con™</h2>
           </div>
         </div>
         <div class="joycon-description">
@@ -313,7 +364,7 @@
       <section class="section-games-galery" id="games">
         <div class="games-galery-titles-container">
           <div class="games-galery-titles">
-            <h2>Juegos</h2>
+            <h2> Descubre los Juegos Exclusivos de Nintendo Switch</h2>
           </div>
           <div class="games-galery-titles-text">
             <p>
@@ -394,10 +445,12 @@
             <h2>¡Únete a nuestro newsletter!</h2>
             <p>
               Recibe las últimas noticias, sorteos y actualizaciones sobre
-             <strong lang="en"> Nintendo Switch.</strong>
+              <strong lang="en">Nintendo Switch.</strong>
             </p>
           </div>
+        
           <form action="#" method="post">
+            <!-- Campo Nombre -->
             <div class="form-group">
               <label for="name">Nombre:</label>
               <input
@@ -408,7 +461,8 @@
                 required
               />
             </div>
-
+        
+            <!-- Campo Correo Electrónico -->
             <div class="form-group">
               <label for="email">Correo electrónico:</label>
               <input
@@ -419,7 +473,40 @@
                 required
               />
             </div>
-
+        
+            <!-- Campo Consola actual -->
+            <div class="form-group">
+              <label for="console">¿Qué consola tienes actualmente?</label>
+              <select id="console" name="console">
+                <option value="switch">Nintendo Switch</option>
+                <option value="oled">Nintendo Switch OLED</option>
+                <option value="lite">Nintendo Switch Lite</option>
+                <option value="other">Otra</option>
+              </select>
+            </div>
+        
+            <!-- Campo Juego favorito -->
+            <div class="form-group">
+              <label for="favorite-game">¿Cuál es tu juego favorito?</label>
+              <input
+                type="text"
+                id="favorite-game"
+                name="favorite-game"
+                placeholder="Escribe tu juego favorito"
+              />
+            </div>
+        
+            <!-- Campo Plataforma de contacto -->
+            <div class="form-group">
+              <label for="contact-platform">¿Cómo prefieres que te contactemos?</label>
+              <select id="contact-platform" name="contact-platform">
+                <option value="email">Correo Electrónico</option>
+                <option value="sms">SMS</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+        
+            <!-- Campo Intereses -->
             <div class="form-group">
               <label for="reason">¿Qué te interesa más?</label>
               <select id="reason" name="reason">
@@ -429,14 +516,16 @@
                 <option value="club-fans">Club de Fans</option>
               </select>
             </div>
-
+        
+            <!-- Campo Términos y condiciones -->
             <div class="form-group">
               <label>
                 <input type="checkbox" name="terms" required /> Acepto los
                 <a href="#">términos y condiciones</a>.
               </label>
             </div>
-
+        
+            <!-- Botón de Suscripción -->
             <button type="submit" class="submit-btn">Suscribirse</button>
           </form>
         </div>
