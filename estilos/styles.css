@@ -583,10 +583,12 @@ footer {
 
   .introduction-title-container p {
     width: 70%;
+    text-shadow:none
   }
   .introduction-title-container {
     max-width: 600px;
   }
+
   .introduction-text-container {
     display: flex;
     justify-content: center;
